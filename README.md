@@ -2,7 +2,7 @@
 
 A classic project for most Computer Science students!
 This project allows a user to generate and solve mazes by
-visualising the process of different search algorithms 
+visualising the process of different path-finding algorithms 
 (e.g., breadth-first, A*, etc.).
 
 **Project Goals:**
