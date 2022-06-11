@@ -6,7 +6,7 @@ This project allows a user to experiment with different path-finding algorithms 
 search algorithms seek a (perhaps optimal) route towards a goal (from a starting position) in a grid. This project was 
 also used as a means to learn _React.js_ for creating web-based Graphical User Interfaces (GUIs).
 
-Demo At: [Link](https://nmpoole.github.io/MazeSolver/).
+Demo At: [https://NMPoole.github.io/MazeSolver/](https://NMPoole.github.io/MazeSolver/).
 
 The user is able to select between different search algorithms:
 1. Random Walk
