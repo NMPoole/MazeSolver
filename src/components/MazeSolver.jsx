@@ -11,7 +11,7 @@ import {dijkstra, getOptPathNodes_Dijkstra,} from "../search_algorithms/dijkstra
 import {breadthFirstSearch, getOptPathNodes_BFS} from "../search_algorithms/breadthFirstSearch";
 import {depthFirstSearch, getOptPathNodes_DFS} from "../search_algorithms/depthFirstSearch";
 import {aStar, getOptPathNodes_AStar,} from "../search_algorithms/astar";
-import {greedyBestFS, getOptPathNodes_GreedyBestFS} from  "../search_algorithms/greedyBestFirstSearch";
+import {greedyBestFS, getOptPathNodes_GreedyBestFS} from "../search_algorithms/greedyBestFirstSearch";
 import {bidirGreedySearch, getOptPathNodes_BidirGreedySearch} from "../search_algorithms/birdirGreedySearch";
 
 // Import maze generation algorithms.
