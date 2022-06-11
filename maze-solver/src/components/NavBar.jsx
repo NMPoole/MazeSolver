@@ -175,7 +175,7 @@ class NavBar extends Component {
             <nav className="navbar navbar-expand navbar-dark bg-dark">
 
                 {/* Title of the page in the navigation bar. */}
-                <a className="navbar-brand h1 mb-0" href="https://NMPoole.github.io/MazeSolver/">
+                <a className="navbar-brand h1 mb-0" href="https://github.com/NMPoole/MazeSolver">
                     {window.innerWidth > 800 ? "Maze Solver by Nathan Poole" : "Maze Solver"}
                 </a>
 
