@@ -609,6 +609,8 @@ class MazeSolver extends Component {
 
     render() {
 
+        // TODO: Should add a key element above the grid explicitly saying that green box = start, red = goal, black = wall, etc.
+
         let {grid} = this.state;
 
         return (
