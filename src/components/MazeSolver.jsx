@@ -3,7 +3,7 @@ import "./MazeSolver.css";
 
 // Import components for creating the MazeSolver application.
 import Node from "./Node/Node";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar/NavBar";
 
 // Import search algorithms for solving mazes.
 import {randomWalk} from "../search_algorithms/randomWalk"
@@ -615,6 +615,7 @@ class MazeSolver extends Component {
 
             <React.Fragment>
 
+                {/* The navigation bar with interaction options. */}
                 <NavBar
 
                     visualizingAlgorithm={this.state.visualizingAlgorithm}
@@ -639,6 +640,7 @@ class MazeSolver extends Component {
 
                 />
 
+                {/* The key for the grid. */}
                 <div className="gridKey">
 
                     <div className="keyItem">
@@ -719,8 +721,10 @@ class MazeSolver extends Component {
 
                 </div>
 
+                {/* The grid. */}
                 <div className={this.state.visualizingAlgorithm || this.state.generatingMaze ? "grid-visualizing" : "grid"}>
 
+                    {/* Map every row and column (# determined by the screen dimensions) to Node component. */}
                     {grid.map((row, rowId) => {
 
                         return (
@@ -774,6 +778,8 @@ class MazeSolver extends Component {
                     })}
 
                 </div>
+
+                {/* TODO: Add a pseudocode for selected algorithm component. */}
 
             </React.Fragment>
 
