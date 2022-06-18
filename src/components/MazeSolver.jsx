@@ -609,8 +609,6 @@ class MazeSolver extends Component {
 
     render() {
 
-        // TODO: Should add a key element above the grid explicitly saying that green box = start, red = goal, black = wall, etc.
-
         let {grid} = this.state;
 
         return (
@@ -640,6 +638,86 @@ class MazeSolver extends Component {
                     updateSpeed={this.updateSpeed.bind(this)}
 
                 />
+
+                <div className="gridKey">
+
+                    <div className="keyItem">
+                        <div className="keyIcon">
+
+                        <Node
+
+                            key="key-node-start"
+
+                            row={-1}
+                            col={-1}
+
+                            isStart={true}
+                            isFinish={false}
+                            isVisited={false}
+                            isShortest={false}
+                            isWall={false}
+
+                            width={this.state.width * 1.3}
+                            height={this.state.height * 1.3}
+                            numRows={this.state.numRows}
+                            numColumns={this.state.numColumns}
+
+                        />
+                    </div>
+                        <div className="keyLabel">Start Node</div>
+                    </div>
+
+                    <div className="keyItem">
+                        <div className="keyIcon">
+                        <Node
+
+                            key="key-node-finish"
+
+                            row={-1}
+                            col={-1}
+
+                            isStart={false}
+                            isFinish={true}
+                            isVisited={false}
+                            isShortest={false}
+                            isWall={false}
+
+                            width={this.state.width * 1.3}
+                            height={this.state.height * 1.3}
+                            numRows={this.state.numRows}
+                            numColumns={this.state.numColumns}
+
+                        />
+                    </div>
+                        <div className="keyLabel">Goal Node</div>
+                    </div>
+
+                    <div className="keyItem">
+                        <div className="keyIcon">
+                        <Node
+
+                            key="key-node-wall"
+
+                            row={-1}
+                            col={-1}
+
+                            isStart={false}
+                            isFinish={false}
+                            isVisited={false}
+                            isShortest={false}
+                            isWall={true}
+
+                            width={this.state.width * 1.3}
+                            height={this.state.height * 1.3}
+                            numRows={this.state.numRows}
+                            numColumns={this.state.numColumns}
+
+                        />
+                    </div>
+                        <div className="keyLabel">Wall Node</div>
+                    </div>
+
+                </div>
 
                 <div className={this.state.visualizingAlgorithm || this.state.generatingMaze ? "grid-visualizing" : "grid"}>
 
