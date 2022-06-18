@@ -4,6 +4,7 @@ import "./MazeSolver.css";
 // Import components for creating the MazeSolver application.
 import Node from "./Node/Node";
 import NavBar from "./NavBar/NavBar";
+import Pseudocode from "./Pseudocode/Pseudocode";
 
 // Import search algorithms for solving mazes.
 import {randomWalk} from "../search_algorithms/randomWalk"
@@ -46,10 +47,19 @@ class MazeSolver extends Component {
         numColumns: initNumCols,
         speed: 10,
         mazeSpeed: 10,
+        algorithm: "Visualize Algorithm",
     };
 
 
     // UTILITY METHODS:
+
+    updateAlgorithm = (newAlgorithm) => {
+
+        this.setState({
+            algorithm: newAlgorithm
+        })
+
+    }
 
     updateDimensions = () => {
 
@@ -638,6 +648,9 @@ class MazeSolver extends Component {
                     clearPath={this.clearPath.bind(this)}
                     updateSpeed={this.updateSpeed.bind(this)}
 
+                    algorithm={this.state.algorithm}
+                    updateAlgorithm={this.updateAlgorithm.bind(this)}
+
                 />
 
                 {/* The key for the grid. */}
@@ -779,7 +792,11 @@ class MazeSolver extends Component {
 
                 </div>
 
-                {/* TODO: Add a pseudocode for selected algorithm component. */}
+                {/* Pseudocode for selected algorithm component. */}
+                <Pseudocode
+                    algorithm={this.state.algorithm}
+                    updateAlgorithm={this.updateAlgorithm.bind(this)}
+                />
 
             </React.Fragment>
 

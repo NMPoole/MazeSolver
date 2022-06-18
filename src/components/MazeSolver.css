@@ -1,6 +1,8 @@
 .gridKey {
-    display: table;
-    margin: 10px auto 0;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    pointer-events: none;
 }
 
 @media (max-width: 1250px) {
@@ -86,30 +88,22 @@
 .keyIcon {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 10px;
 }
 
 .keyLabel {
     display: inline-block;
     margin-left: 5px;
-    vertical-align: center;
 }
 
 .grid {
     font-size: 0;
     pointer-events: unset;
-
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 2%);
+    text-align: center;
 }
 
 .grid-visualizing {
     font-size: 0;
     pointer-events: none;
-
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 2%);
+    text-align: center;
 }

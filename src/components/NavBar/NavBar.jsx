@@ -8,7 +8,6 @@ class NavBar extends Component {
     // ATTRIBUTES (i.e., State):
 
     state = {
-        algorithm: "Visualize Algorithm", // Algorithm for pathfinding.
         maze: "Generate Maze", // Algorithm for maze generation.
         pathState: false, // State of found path.
         mazeState: false, // State of generated maze.
@@ -22,19 +21,20 @@ class NavBar extends Component {
 
         if (this.props.visualizingAlgorithm) return;
 
-        if (selection === this.state.algorithm ||
-            this.state.algorithm === "Visualize Algorithm" || this.state.algorithm === "Select an Algorithm!") {
+        if (selection === this.props.algorithm ||
+            this.props.algorithm === "Visualize Algorithm" ||
+            this.props.algorithm === "Select an Algorithm!") {
 
-            this.setState({algorithm: selection});
+            this.props.updateAlgorithm(selection);
 
         } else if (this.state.pathState) {
 
             this.clearPath();
-            this.setState({algorithm: selection});
+            this.props.updateAlgorithm(selection);
 
         } else {
 
-            this.setState({algorithm: selection});
+            this.props.updateAlgorithm(selection);
 
         }
 
@@ -70,21 +70,21 @@ class NavBar extends Component {
             return;
         }
 
-        if (this.state.algorithm === "Visualize Algorithm" || this.state.algorithm === "Select an Algorithm!") {
+        if (this.props.algorithm === "Visualize Algorithm" || this.props.algorithm === "Select an Algorithm!") {
 
-            this.setState({algorithm: "Select an Algorithm!"});
+            this.props.updateAlgorithm("Select an Algorithm!");
 
         } else {
 
             this.setState({pathState: true});
 
-            if (this.state.algorithm === "Visualize Dijkstra") this.props.visualizeDijkstra();
-            else if (this.state.algorithm === "Visualize A*") this.props.visualizeAStar();
-            else if (this.state.algorithm === "Visualize Greedy BFS") this.props.visualizeGreedyBFS();
-            else if (this.state.algorithm === "Visualize Bidirectional Greedy")  this.props.visualizeBidirectionalGreedySearch();
-            else if (this.state.algorithm === "Visualize Breadth First Search") this.props.visualizeBFS();
-            else if (this.state.algorithm === "Visualize Depth First Search") this.props.visualizeDFS();
-            else if (this.state.algorithm === "Visualize Random Walk") this.props.visualizeRandomWalk();
+            if (this.props.algorithm === "Visualize Dijkstra") this.props.visualizeDijkstra();
+            else if (this.props.algorithm === "Visualize A*") this.props.visualizeAStar();
+            else if (this.props.algorithm === "Visualize Greedy BFS") this.props.visualizeGreedyBFS();
+            else if (this.props.algorithm === "Visualize Bidirectional Greedy")  this.props.visualizeBidirectionalGreedySearch();
+            else if (this.props.algorithm === "Visualize Breadth First Search") this.props.visualizeBFS();
+            else if (this.props.algorithm === "Visualize Depth First Search") this.props.visualizeDFS();
+            else if (this.props.algorithm === "Visualize Random Walk") this.props.visualizeRandomWalk();
 
         }
 
@@ -246,7 +246,7 @@ class NavBar extends Component {
 
                             <button type="button" className="btn btn-success"
                                     onClick={() => this.visualizeAlgorithm()}>
-                                {this.state.algorithm}
+                                {this.props.algorithm}
                             </button>
 
                         </li>
