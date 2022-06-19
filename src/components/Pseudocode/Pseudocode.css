@@ -1,5 +1,16 @@
 .pseudocode {
-    margin-top: 10px;
-    margin-left: 20px;
-    text-align: left;
+    margin: 10px 20px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.pseudocode>h4 {
+    text-align: center;
+}
+
+.pseudocode>pre {
+    margin-left: 10px;
+}
+
+.pseudocode>p {
+    margin-left: 10px;
 }
