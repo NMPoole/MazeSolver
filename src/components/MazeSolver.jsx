@@ -653,6 +653,15 @@ class MazeSolver extends Component {
 
                 />
 
+                {/* Instructions for the grid. */}
+                <div className="grid-instructions">
+                    <p>
+                        <i>Click</i> or <i>drag</i> within the grid to toggle walls.<br />
+                        Alternatively, create a maze using the options above.<br />
+                        Then, select a pathfinding algorithm and visualize it!
+                    </p>
+                </div>
+
                 {/* The key for the grid. */}
                 <div className="gridKey">
 

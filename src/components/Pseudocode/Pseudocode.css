@@ -1,10 +1,10 @@
 .pseudocode {
     margin: 10px 20px;
-    box-shadow: 0 0 10px #ccc;
 }
 
 .pseudocode>h4 {
-    text-align: center;
+    margin-left: 10px;
+    text-align: left;
 }
 
 .pseudocode>pre {
@@ -13,4 +13,52 @@
 
 .pseudocode>p {
     margin-left: 10px;
+}
+
+@media (max-width: 1100px) {
+    .pseudocode {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 950px) {
+    .pseudocode {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .pseudocode {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 635px) {
+    .pseudocode {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 635px) {
+    .pseudocode {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 575px) {
+    .pseudocode {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pseudocode {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .pseudocode {
+        font-size: 6px;
+    }
 }

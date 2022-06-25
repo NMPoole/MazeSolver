@@ -270,6 +270,22 @@ class Pseudocode extends Component {
 
     }
 
+    pseudocodeDefault() {
+
+        return (
+
+            <>
+
+                <p>
+                    <i>Select</i> a pathfinding algorithm from above to get pseudocode.
+                </p>
+
+            </>
+
+        );
+
+    }
+
     handlePseudocode = (algorithm) => {
 
         switch (algorithm) {
@@ -280,6 +296,7 @@ class Pseudocode extends Component {
             case "Breadth First Search": return this.pseudocodeBFS();
             case "Depth First Search": return this.pseudocodeDFS();
             case "Random Walk": return this.pseudocodeRandomWalk();
+            default: return this.pseudocodeDefault();
         }
 
     }
