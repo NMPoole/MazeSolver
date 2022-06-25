@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MazeSolver/static/css/main.57f8e0fa.css",
-    "main.js": "/MazeSolver/static/js/main.1aef87e3.js",
+    "main.css": "/MazeSolver/static/css/main.b0eb5ee0.css",
+    "main.js": "/MazeSolver/static/js/main.df223eed.js",
     "index.html": "/MazeSolver/index.html",
-    "main.57f8e0fa.css.map": "/MazeSolver/static/css/main.57f8e0fa.css.map",
-    "main.1aef87e3.js.map": "/MazeSolver/static/js/main.1aef87e3.js.map"
+    "main.b0eb5ee0.css.map": "/MazeSolver/static/css/main.b0eb5ee0.css.map",
+    "main.df223eed.js.map": "/MazeSolver/static/js/main.df223eed.js.map"
   },
   "entrypoints": [
-    "static/css/main.57f8e0fa.css",
-    "static/js/main.1aef87e3.js"
+    "static/css/main.b0eb5ee0.css",
+    "static/js/main.df223eed.js"
   ]
 }
