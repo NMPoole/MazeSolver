@@ -5,16 +5,15 @@
     pointer-events: none;
 }
 
-@media (max-width: 1250px) {
-    .keyItem {
-        margin-left: 10px;
-        margin-right: 10px;
-        display: inline-block;
-    }
-    .grid-instructions {
-        margin: 10px 20px;
-        text-align: center;
-    }
+.grid-instructions {
+    margin: 10px 20px;
+    text-align: center;
+}
+
+.keyItem {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
 }
 
 @media (max-width: 1100px) {
