@@ -52,13 +52,47 @@ class Node extends Component {
             <div
                 id={`node-${row}-${col}`} className={`${extraClass}`}
                 style={{ "--width": `${cellWidth}px`, "--height": `${cellHeight}px` }}
+
+                onPointerDown={() => onMouseDown(row, col)}
+                onPointerUp={() => onMouseUp()}
+
                 onMouseEnter={() => onMouseEnter(row, col)}
-                onMouseDown={() => onMouseDown(row, col)}
-                onMouseUp={() => onMouseUp()}
+                onTouchMove={(event) => this.onTouchEnter(event)}
             >
             </div>
 
         );
+
+    }
+
+
+    prevElAltered = null; // Used for adding touch event accessibility.
+
+    onTouchEnter(e) {
+
+        // Get co-ordinates of the touch event.
+        const touch = e.touches[0] || e.changedTouches[0];
+        const x = touch.pageX;
+        const y = touch.pageY;
+
+        // Get element that the touch event is 'hovering' over.
+        const currEl = document.elementFromPoint(x, y);
+
+        // If the element is a node, then we run the logic to switch between wall and space.
+        if (currEl.className === "node" || currEl.className === "node-wall") {
+
+            // Guard Condition: Make sure to not repeatedly alter the same node.
+            if (this.prevElAltered != null && this.prevElAltered === currEl) return;
+
+            this.prevElAltered = currEl;
+
+            const idSplit = currEl.id.split("-");
+            const row = idSplit[1];
+            const col = idSplit[2];
+
+            this.props.onMouseEnter(row, col);
+
+        }
 
     }
 

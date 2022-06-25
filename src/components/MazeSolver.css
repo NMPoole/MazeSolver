@@ -100,6 +100,8 @@
     font-size: 0;
     pointer-events: unset;
     text-align: center;
+
+    touch-action: none;
 }
 
 .grid-visualizing {
