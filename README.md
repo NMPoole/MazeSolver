@@ -26,7 +26,9 @@ generate mazes using different maze generation algorithms:
 
 **Demo Video**
 
-<img src="https://github.com/NMPoole/MazeSolver/blob/main/MazeSolver_Demo.gif" alt="Demo Video" width="75%" align="center"/>
+<p align="center">
+  <img src="https://github.com/NMPoole/MazeSolver/blob/main/MazeSolver_Demo.gif" alt="Demo Video" width="70%" align="center"/>
+</p>
 
 **Project Goals:**
 
