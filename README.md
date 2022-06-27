@@ -8,7 +8,7 @@ also used as a means to learn _React.js_ for creating web-based Graphical User I
 
 Demo At: [https://NMPoole.github.io/MazeSolver/](https://NMPoole.github.io/MazeSolver/).
 
-![Demo Video](<img src="https://github.com/NMPoole/MazeSolver/blob/main/MazeSolver_Demo.gif" width="50%" height="50%"/>)
+![Demo Video]<img src="https://github.com/NMPoole/MazeSolver/blob/main/MazeSolver_Demo.gif" width="50%" height="50%"/>
 
 The user is able to select between different search algorithms:
 1. Random Walk
