@@ -24,7 +24,7 @@ generate mazes using different maze generation algorithms:
 3. Vertical Generation
 4. Recursive Division Generation
 
-**Demo Video**
+**Demo Video:**
 
 <p align="center">
   <img src="https://github.com/NMPoole/MazeSolver/blob/main/MazeSolver_Demo.gif" alt="Demo Video" width="70%" align="center"/>
