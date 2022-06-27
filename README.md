@@ -59,5 +59,5 @@ new skills about web UIs (via _React.js_). As such, I must acknowledge the great
 Overall, I feel that I would have been able to implement a project even more impressive with a technology I am already 
 very familiar with, such as _P5.js_. However, I learned a great deal during this project and will endeavour to explore 
 _React.js_ in future projects! In particular, I have implemented the project using the now dated practice of class-based 
-UI components, since this synergized with my dominant Java experience. However, in future projects I would like to 
+UI components, since this complemented my dominant Java experience. However, in future projects I would like to 
 explore the more modern functional component model with hooks.
