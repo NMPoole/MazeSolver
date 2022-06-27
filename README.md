@@ -8,8 +8,6 @@ also used as a means to learn _React.js_ for creating web-based Graphical User I
 
 Demo At: [https://NMPoole.github.io/MazeSolver/](https://NMPoole.github.io/MazeSolver/).
 
-<img src="https://github.com/NMPoole/MazeSolver/blob/main/MazeSolver_Demo.gif" alt="Demo Video" height="50%" align="center"/>
-
 The user is able to select between different search algorithms:
 1. Random Walk
 2. Breadth-First Search
@@ -25,6 +23,10 @@ generate mazes using different maze generation algorithms:
 2. Horizontal Generation
 3. Vertical Generation
 4. Recursive Division Generation
+
+**Demo Video**
+
+<img src="https://github.com/NMPoole/MazeSolver/blob/main/MazeSolver_Demo.gif" alt="Demo Video" width="75%" align="center"/>
 
 **Project Goals:**
 
